@@ -5,7 +5,7 @@ from setuptools import setup
 
 builddir = "build-Release"
 sdkdir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(join(sdkdir, "api"))
+sys.path.insert(0, join(sdkdir, "api"))
 import gmsh
 
 setup(
